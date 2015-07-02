@@ -3,19 +3,11 @@ package com.jodynek.alarmclock;
 /**
  * Created by jodynek on 2. 7. 2015.
  */
-import java.util.TimeZone;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
-import android.graphics.Bitmap;
-import android.graphics.BlurMaskFilter;
 import android.graphics.Canvas;
-import android.graphics.Color;
-import android.graphics.Paint;
-import android.graphics.PorterDuff;
-import android.graphics.PorterDuffXfermode;
-import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Handler;
 import android.os.Message;
@@ -24,6 +16,8 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
 import android.widget.RemoteViews.RemoteView;
+
+import java.util.TimeZone;
 
 /**
  * This widget display an analogic clock with two hands for hours and minutes.
@@ -282,14 +276,6 @@ public class MyAnalogClock extends View {
         secondHand.draw(canvas);
         canvas.restore();
 
-//        canvas.save();
-//        Paint paint = new Paint();
-//        paint.setAntiAlias(true);
-//        paint.setAlpha(60);
-//        paint.setStyle(Paint.Style.FILL);
-//        paint.setColor(Color.GRAY);
-//        canvas.drawCircle(x, y, 5, paint);
-//        canvas.restore();
         // /////end
 
         if (scaled) {
