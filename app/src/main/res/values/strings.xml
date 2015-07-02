@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">AlarmClock</string>
 
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="settings_button">Settings</string>
 </resources>

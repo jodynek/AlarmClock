@@ -9,7 +9,7 @@
     <TextView android:id="@+id/fullscreen_content" android:layout_width="match_parent"
         android:layout_height="match_parent" android:keepScreenOn="true" android:textColor="#33b5e5"
         android:textStyle="bold" android:textSize="50sp" android:gravity="center"
-        android:text="@string/dummy_content" />
+        />
 
     <!-- This FrameLayout insets its children based on system windows using
          android:fitsSystemWindows. -->
@@ -25,7 +25,7 @@
 
             <Button android:id="@+id/dummy_button" style="?metaButtonBarButtonStyle"
                 android:layout_width="0dp" android:layout_height="wrap_content"
-                android:layout_weight="1" android:text="@string/dummy_button" />
+                android:layout_weight="1" android:text="@string/settings_button" />
 
         </LinearLayout>
 
@@ -35,15 +35,6 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             />
-        <!--
-        <AnalogClock
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/analogClock"
-            android:scaleX="2"
-            android:scaleY="2"
-            android:layout_gravity="center" />
-        -->
     </FrameLayout>
 
 </FrameLayout>
