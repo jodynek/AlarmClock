@@ -2,6 +2,7 @@ package com.jodynek.alarmclock;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -147,7 +148,8 @@ public class FullscreenActivity extends Activity
 
   public void onSettingsClicked(View view)
   {
-    Log.d("", "Clicked!");
+    Intent myIntent = new Intent(this, SettingsActivity.class);
+    this.startActivity(myIntent);
   }
 
   /**
